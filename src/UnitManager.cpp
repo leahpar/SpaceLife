@@ -24,7 +24,6 @@ Unit * UnitManager::addUnit(Unit * u)
    return u;
 }
 
-
 void UnitManager::run(UnitManager * um)
 {
    unsigned int i, j;
@@ -63,3 +62,5 @@ void UnitManager::setPause()
 {
    this->pause = true;
 }
+
+

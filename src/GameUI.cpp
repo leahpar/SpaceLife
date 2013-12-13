@@ -146,8 +146,10 @@ void Game::UILeftMouseUp()
    if (this->mousePosition.w == 0
     && this->mousePosition.h == 0)
    {
-      this->mousePosition.w = 1;
-      this->mousePosition.h = 1;
+      this->mousePosition.x -= 1;
+      this->mousePosition.y -= 1;
+      this->mousePosition.h += 2;
+      this->mousePosition.h += 2;
    }
 
    for (auto &u : this->UM->ships)
